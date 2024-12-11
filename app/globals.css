@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000000;
+}
+.blurFilter {
+  backdrop-filter: blur(15px);
+}
+.positionStick {
+  position: sticky;
+}
+.customBoxShadow {
+  box-shadow: 1px 1px#f3cc8a;
+}
+/* --------- Hero Section --------- */
+
+.heroBg {
+  background-image: url(../public/assets/test2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heroCard {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+}
+.goldcolor {
+  color: #f3cc8a;
+}
+
+.coin-container {
+  perspective: 1000px;
+}
+
+.coin {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  top: -245px;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.coin-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden !important;
+}
+
+.coin-front {
+  transform: rotateY(0deg);
+}
+
+.coin-back {
+  transform: rotateY(180deg);
+}
+.textshadow {
+  text-shadow: 0px 3px #ff3562;
+}
+
+/* About Us */
+
+.aboutUsbg {
+  background-image: url(../public/assets/test1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.serviceSection {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.secureStay {
+  background-image: url(../public/assets/test1.jpg);
+}
+.tacticalSupport {
+  background-image: url(../public/assets/HeroBg.jpg);
+}
+.exclusiveAmenites {
+  background-image: url(../public/assets/test2.jpg);
+}
+.discreetServices {
+  background-image: url(../public/assets/hero.jpg);
+}
+
+.serviceCardBorder {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* cards */
+
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 30px;
+}
+
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.card {
+  max-width: 550px;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 40px;
+  border: 1px solid #f3cc8a;
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+
+.card-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+
+.card-description {
+  font-weight: 600;
+  line-height: 32px;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  max-width: 470px;
+}
+
+/* Room & Suites Landing */
+
+.RoomLandingSection {
+  background-image: url(../public/assets/RoomMain.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.roomOverlay{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .2s ease;
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.romsSuitesWrapper{
+  position: relative;
+  background-image: url(../public/assets/RoomPageBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.serviceMain{
+  position: relative;
+}
+.roomSingleComponentWrapper::before, .romsSuitesWrapper::before, .serviceMain::before, .membershipBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.serviceMain::before, .membershipBg::before{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.writingMode{
+  writing-mode: vertical-rl;
+  letter-spacing: 10px;
+}
+.cardBordered{
+  width: 1px;
+  border: 1px solid #f3cc8a;
+  width: 50%;
+}
+
+
+/* Login */
+.loginWrapper {
+  position: relative;
+  height: 100vh;
+  background-image: url(../public/assets/loginbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.loginWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.ImageSliderMainWrapper{
+  height: 90vh;
+}
+.swiper-button-prev, .swiper-button-next{
+  color: #f3cc8a !important;
+}
+.swiper-pagination-bullet{
+  background-color: #ffffff !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #f3cc8a !important;
+}
+
+.parallax {
+  background-image: url(../public/assets//assassinMain2.jpg);
+  min-height: 550px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* membership */
+.membershipBg {
+  background-image: url(../public/assets/membershipMain.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.cardMemberWrapper:hover{
+  box-shadow: 0px 0px 25px 0px white;
+}
+.profileSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #14a2b8;
+  border-radius: 8px;
+  z-index: -1;
+}
