@@ -310,3 +310,20 @@ body {
   border-radius: 8px;
   z-index: -1;
 }
+
+
+/* Admin Dashboard */
+
+.SelectedDashobardNavItem{
+  border-radius: 0 30px 30px 0;
+  background: black;
+  color: #f3cc8a;
+  border-left: 2px solid #f3cc8a;
+}
+
+.dashobardNavItem:hover{
+  border-radius: 0 30px 30px 0;
+  background: black;
+  color: #f3cc8a;
+  border-left: 2px solid #f3cc8a;
+}
