@@ -22,9 +22,7 @@ export default function CustomNavBar() {
     {id: 2, title:'Rooms & Suites', ref: '/rooms'},
     {id: 3, title:'Services', ref: '/services'},
     {id: 4, title:'Membership', ref: '/membership'},
-    {id: 5, title:'Hire An Assassin', ref:'/assassin'},
-    {id: 6, title:'About', ref: '/'},
-    {id: 7, title:'Contact', ref: '/'},
+    {id: 5, title:'Admin Dashboard', ref:'/admin'},
   ]
 
   return (

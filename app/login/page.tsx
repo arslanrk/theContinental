@@ -1,10 +1,7 @@
 'use client'
 
-import Image from "next/image";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-
 import { LoginSchemaValidation } from "@/schema/loginSchema";
-import Logo from "../../public/assets/logo.png";
 
 const page = () => {
   const initialValues = {
@@ -15,7 +12,6 @@ const page = () => {
   return (
     <div className="min-h-screen flex items-center justify-end w-full loginWrapper px-10 pt-7">
       <div className="flex flex-col justify-center gap-3 items-center px-2 py-2 blurFilter lg:w-[35%] w-full relative z-[2] rounded-lg">
-        <Image src={Logo} width={150} height={75} alt="logo" />
         <p className="text-cutomGold font-bold font-heading uppercase text-xl textshadow">
           Welcome to The Continental
         </p>
